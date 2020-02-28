@@ -81,8 +81,13 @@ def movies_with_directors_set(source)
   while director_index<source.count do 
     name= source[director_index][:name]
     movies =source[director_index][:movies]
-    movies_with_director_key(name,movies)
-    result.push()
+    all=movies_with_director_key(name,movies)
+    result.push(all)
+    director_index+=1 
+    
+  end
+  
+  result
     
   
   
