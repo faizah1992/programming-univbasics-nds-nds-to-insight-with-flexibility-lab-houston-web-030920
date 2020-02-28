@@ -34,8 +34,15 @@ end
 # Your code after this point
 
 def movies_with_director_key(name, movies_collection)
-  
- 
+  movie_index=0 
+  result=[]
+  while movie_index<movies_collection.count do 
+    movie= movies_collection[movie_index]
+    included=movie_with_director_name(name,movie)
+    result.push(included)
+    movie_index += 1 
+  end
+  result
   
   # GOAL: For each Hash in an Array (movies_collection), provide a collection
   # of movies and a directors name to the movie_with_director_name method
