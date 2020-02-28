@@ -63,8 +63,10 @@ end
 
 def gross_per_studio(collection)
   movie_index= 0 
+  result
   while movie_index<collection.count do 
    gross= collection[movie_index][:worldwide_gross]
+   stuido= collection[movie_index][:studio]
    
     
   # GOAL: Given an Array of Hashes where each Hash represents a movie,
