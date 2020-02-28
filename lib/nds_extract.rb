@@ -76,6 +76,10 @@ def gross_per_studio(collection)
 end
 
 def movies_with_directors_set(source)
+  director_index=0 
+  while director_index<source.count do 
+    names= source[director_index][:name]
+    
   
   
   # GOAL: For each director, find their :movies Array and stick it in a new Array
